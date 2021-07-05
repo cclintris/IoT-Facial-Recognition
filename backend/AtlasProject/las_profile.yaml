@@ -1,0 +1,13 @@
+name: "las_profile"
+manufacturer: "xgs"
+model: "xgs model"
+labels:
+  - "las"
+description: "阿特拉斯的profile"
+
+deviceResources:
+  - name: camera
+    description: "摄像头"
+    properties:
+      value:
+        { type: "Int64", readWrite: "RW", minimum: "-10", maximum: "10", defaultValue: "-1" }

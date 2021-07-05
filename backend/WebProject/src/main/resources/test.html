@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let ws = new WebSocket("ws://localhost:8097/iot/camera")
+        ws.onerror = () => {
+            console.log("error")
+        }
+
+        ws.onopen = () => {
+            console.log("onopen")
+        }
+
+        ws.onclose = () => {
+            console.log("onclose")
+        }
+
+        ws.onmessage = (event) => {
+            console.log("onmessage")
+        }
+
+        setInterval(()=>{
+            ws.send("next")
+        },500)
+
+        let ws2 = new WebSocket("ws://localhost:8097/iot/roger")
+        ws2.onerror = () => {
+            console.log("rogererror")
+        }
+
+        ws2.onopen = () => {
+            console.log("rogeronopen")
+        }
+
+        ws2.onclose = () => {
+            console.log("rogeronclose")
+        }
+
+        ws2.onmessage = (event) => {
+            console.log("rogeronmessage")
+        }
+
+        setInterval(()=>{
+            ws.send("photo")
+        },500)
+
+
+    </script>
+
+</body>
+</html>

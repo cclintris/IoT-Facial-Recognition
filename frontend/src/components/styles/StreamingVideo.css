@@ -1,0 +1,53 @@
+.streamingV {
+  width: 75vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(232, 235, 238);
+  z-index: 100;
+  float: left;
+}
+.streamingV > .loading {
+  position: fixed;
+  top: 40%;
+  font-size: 80px;
+  z-index: 200;
+  color: white;
+}
+.streamingV > .canvas {
+  z-index: 100;
+  border: 1px solid black;
+}
+.streamingV > .btn-layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.streamingV > .btn-layout .btn {
+  margin-top: 40px;
+  width: 40%;
+  height: 50px;
+  z-index: 100;
+}
+.particles-bg-canvas-self {
+  opacity: 0.3;
+}
+.recogRes {
+  width: 25vw;
+  height: 100vh;
+  float: left;
+  background-color: rgb(66, 66, 71);
+  z-index: 100;
+  padding: 30px 20px 0px 20px;
+}
+.recogRes > .description {
+  color: whitesmoke;
+  font-size: 15px;
+}
+.ant-form-item-label > label {
+  color: wheat !important;
+}

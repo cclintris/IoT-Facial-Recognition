@@ -1,0 +1,8 @@
+org\example\StaticPool.class
+org\example\SeqCounter.class
+org\example\WebSocketParamConfig.class
+org\example\App.class
+org\example\RedisUtil.class
+org\example\CameraWS.class
+org\example\WSConfig.class
+org\example\RogerWS.class

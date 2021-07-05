@@ -1,0 +1,13 @@
+name: "song_profile"
+manufacturer: "xgs"
+model: "xgs model"
+labels:
+  - "song"
+description: "奥松的profile"
+
+deviceResources:
+  - name: button
+    description: "按钮"
+    properties:
+      value:
+        { type: "Int64", readWrite: "RW", minimum: "-10", maximum: "10", defaultValue: "-1" }
